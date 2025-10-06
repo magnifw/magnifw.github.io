@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0e2f, #0f0a18);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 70px; /* espaço pra nav */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(19, 9, 36, 0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav ul li a:hover {
+  color: #caa6ff;
+  transform: translateY(-2px);
+}
+
+#name {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 80px;
+  margin: 20px 0 10px;
+}
+
+#title {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+/* ---- Card Dark Futurista ---- */
+.card {
+  background: linear-gradient(145deg, #2c1e33, #3c2b5c);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  max-width: 800px;
+  width: 95%;
+  padding: 25px;
+  color: #e0d6ff;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+.card h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #caa6ff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.card p, 
+.card li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ---- Estilo global para todos os botões ---- */
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  border: 3px solid #2c1e33; /* borda roxa escura */
+  border-radius: 12px;
+  background: linear-gradient(145deg, #3c2b5c, #2c1e33);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+button:hover {
+  background: linear-gradient(145deg, #593c88, #3c2b5c);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Card com imagem */
+.card-img {
+  position: relative;
+  background: linear-gradient(145deg, #2c1e33, #3c2b5c);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  max-width: 400px;
+  width: 90%;
+  padding: 25px 20px 20px 20px;
+  color: #e0d6ff;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-img:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Imagem dentro do card */
+.card-img img {
+  width: 120px; /* ajusta o tamanho da logo */
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px #caa6ff); /* glow roxo */
+}
+
+/* Título e parágrafo */
+.card-img h2 {
+  margin-top: 0;
+  color: #caa6ff;
+  font-size: 28px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.card-img p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Botão já estilizado anteriormente */
+.card-img button {
+  margin-top: 10px;
+}

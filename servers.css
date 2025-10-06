@@ -1,0 +1,65 @@
+.info h3 {
+  font-size: 1.1rem;
+  color: #caa6ff;
+  margin-top: 10px;
+}
+
+.info p {
+  margin-left: 10px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.ip {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 6px #caa6ff;
+}
+
+#first {
+  margin-top: 10px
+}
+
+    .staffs {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease;
+      list-style: none;
+      margin-left: 15px;
+      padding-left: 0;
+    }
+
+    .staffs.show {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .staffs li {
+      padding: 6px 0;
+      font-size: 1rem;
+      color: #e0d6ff;
+      transition: 0.3s;
+    }
+
+    .staffs li:hover {
+      color: #caa6ff;
+      transform: translateX(5px);
+    }
+
+    .toggle-staffs {
+      background: none;
+      border: none;
+      color: #caa6ff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 5px;
+      transition: 0.3s;
+    }
+
+    .toggle-staffs:hover {
+      text-shadow: 0 0 8px #caa6ff;
+      transform: scale(1.05);
+    }

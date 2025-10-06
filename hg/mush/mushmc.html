@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnifw - MushMC</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../servers.css">
+  <link rel="icon" type="image/png" href="../../icon.png">
+  <script src="../../stafflist.js"></script>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="server-section">
+      <div class="card-img">
+        <img src="../pics/mushmc-logo.png" alt="MushMC Logo">
+        <h2>MushMC</h2>
+        <div class="info">
+          <h3><i class="fa-solid fa-user-group"></i> Nome completo:</h3>
+          <p>MushMC</p>
+          <h3><i class="fa-solid fa-server"></i> IP do servidor:</h3>
+          <p class="ip">mushmc.com.br</p>
+
+          <h3><i class="fa-solid fa-users"></i> STAFF's</h3>
+          <button class="toggle-staffs" onclick="toggleStaffs()">
+            <i class="fa-solid fa-angle-down"></i> Mostrar STAFFs
+          </button>
+          <ul class="staffs" id="staffList">
+            <li id="first">feijaoo</li>
+            <li>Nicolas</li>
+            <li>Feelipe</li>
+            <li>Anjeel</li>
+            <li>yPandinho</li>
+            <li>Faasty</li>
+            <li>gringo</li>
+            <li>Axtta</li>
+            <li>Kiinzaay</li>
+            <li>saqyz</li>
+            <li>neexty</li>
+            <li>gustavo</li>
+            <li>luis50</li>
+            <li>paiva</li>
+            <li>DanteBR</li>
+            <li>YusukeFL</li>
+          </ul>
+
+          <h3><i class="fa-solid fa-comment"></i> Descrição</h3>
+          <p>
+            MushMC é um servidor brasileiro de Minecraft focado em diversão e competitividade.  
+            Com modos variados e uma comunidade ativa, o servidor oferece desde PvP clássico até minigames estratégicos.  
+            Os jogadores podem explorar mapas customizados, participar de eventos especiais e testar suas habilidades contra outros participantes.  
+            Ideal para quem gosta de partidas rápidas, desafios intensos e interação com a comunidade.
+          </p>
+        </div>
+
+        <button onclick="navigator.clipboard.writeText('mushmc.com.br')">
+          <i class="fa-regular fa-copy"></i> Copiar IP
+        </button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
